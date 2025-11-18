@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data;         // Para DataTable, DataSet, etc.
+using System.Data;     
 
 
 namespace Examen
@@ -34,10 +34,9 @@ namespace Examen
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            // Aquí puedes agregar código para abrir un formulario de registro
-            // o directamente insertar datos de ejemplo manuales:
-            string nombre = "Nueva Bodega"; // Reemplaza por un TextBox si deseas
-            string ubicacion = "Ubicación"; // Reemplaza por un TextBox si deseas
+          
+            string nombre = "Nueva Bodega"; 
+            string ubicacion = "Ubicación"; 
 
             using (SqlConnection con = new SqlConnection(constr))
             using (SqlCommand cmd = new SqlCommand("INSERT INTO Bodega (nombre, ubicacion) VALUES (@nombre, @ubicacion)", con))

@@ -5,8 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
-using System.Data;         // Para DataTable, DataSet, etc.
-using System.Configuration; // Para ConfigurationManager (si usas cadena de conexión desde web.config)
+using System.Data;         
+using System.Configuration; 
 
 
 namespace Examen

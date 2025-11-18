@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Examen.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Sistema de Inventario</title>
+    <link href="CSS/Estilo.css" rel="stylesheet" />
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        ul { list-style-type: none; padding: 0; }
+        li { display: inline; margin-right: 10px; }
+        a { text-decoration: none; padding: 5px 10px; background-color: #ddd; color: #000; border-radius: 3px; }
+        a.active { background-color: #4CAF50; color: white; }
+        a:hover { background-color: #999; color: white; }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Menú común -->
+        <div>
+            <ul>
+                <li><a href="Inicio.aspx" class="@(Request.Path.Contains("Inicio.aspx") ? "active" : "")">Inicio</a></li>
+                <li><a href="TipoArticulos.aspx" class="@(Request.Path.Contains("TipoArticulos.aspx") ? "active" : "")">Tipo de Artículos</a></li>
+                <li><a href="Articulos.aspx" class="@(Request.Path.Contains("Articulos.aspx") ? "active" : "")">Artículos</a></li>
+                <li><a href="Bodega.aspx" class="@(Request.Path.Contains("Bodega.aspx") ? "active" : "")">Bodega</a></li>
+            </ul>
+        </div>
+
+        <!-- Área donde cada página pondrá su contenido -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

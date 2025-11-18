@@ -16,7 +16,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <!-- Menú común -->
+        
         <div>
             <ul>
                 <li><a href="Inicio.aspx" class="@(Request.Path.Contains("Inicio.aspx") ? "active" : "")">Inicio</a></li>
@@ -26,7 +26,7 @@
             </ul>
         </div>
 
-        <!-- Área donde cada página pondrá su contenido -->
+       
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
     </form>

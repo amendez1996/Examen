@@ -1,0 +1,15 @@
+USE [InventarioUH]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TipoArticulo](
+    [id] [int] IDENTITY(100,10) NOT NULL,
+      NOT NULL,
+PRIMARY KEY CLUSTERED ([id] ASC)
+) ON [PRIMARY]
+GO
